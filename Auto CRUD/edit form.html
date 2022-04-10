@@ -1,0 +1,107 @@
+<!--
+<?php
+$id=htmlspecialchars($_REQUEST['id']); 
+$select_query="SELECT * FROM table_name WHERE Id=$id";
+$select=mysqli_query($connection,$select_query);
+while($row=mysqli_fetch_row($select)) 
+{
+    $id=$row['Name'];
+}
+?>
+
+-->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8"> <!-- For Bangla Font -->
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-flat.css"> <!-- color Links -->
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-flat.css">
+<script src="W3.JS.js"></script>  <!-- W3.Js library -->
+<link rel="stylesheet" href="W3.CSS-my.css">  <!-- W3.CSS library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  <!-- Icon Library -->
+<head>
+  <title>Page Title</title>
+  <meta name="description" content="">   <!-- Complete it-->
+  <meta name="keywords" content="">    <!-- Complete it-->
+   
+  <!-- Search engine related-->
+  <meta name="robots" content="index, follow">
+  <meta name="language" content="English">
+  <meta name="revisit-after" content="1 days">
+
+  <link rel="icon" type="image/jpg" sizes="16x16" href="Book cellar bd icon.jpg"> <!-- favicon,  Edit it -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>  <!-- Jquery Library -->
+   <!-- Bootstrap 4  Library -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<style>
+</style>
+<script>   //jquery goes here
+$(document).ready(function(){
+  $("selector").event(function(){ //event=click,dbclick,mouseenter,mouseleave,hover,focus[click on],blur[click outside].
+    $("selector").action(interval); //hide(),show(),toggle(),fadeIn(),fadeOut(),fadeToggle(),addClass(""),removeClass(""),css("property","value")
+  });
+});
+</script>  
+</head>
+<body class="w3-sans-serif">
+
+<div class="w3-panel">
+<div class="w3-border w3-border-blue w3-round" style="max-width:400px;width:100%;margin-left:auto;margin-right:auto">
+                              <div class="w3-container w3-blue">
+                                    <h3>Edit</h3>
+                              </div>
+                              <div class="w3-container">
+                                    
+                                  <form action="add.php" method="POST" enctype="multipart/form-data"><br>
+                                        
+                
+                                  <h6>Title</h6>
+                                  <input required type="text" value="" name="title" class="w3-block w3-border w3-border-gray w3-round"><br>  
+                                  
+                                  <h6>Image</h6>
+                                  <input type="file" name="image" value="" class="w3-block w3-border w3-border-gray w3-round"> 
+                                  <img src="pic.jpg" style="width:100px;height:auto;margin:4px;"><br>
+
+                                  <h6>Description</h6>
+                                  <textarea required type="text" name="description" class="w3-block w3-border w3-border-gray w3-round"></textarea><br> 
+                                  
+
+                                  <h6>Date</h6>
+                                  <input required type="text" value="" name="date" class="w3-block w3-border w3-border-gray w3-round">  <br>
+                                  
+                                 
+                                   <h6>Option</h6>
+                                   <select class="w3-select w3-border w3-block" name="d_charge">
+                                   <option value="1" selected>1</option>
+                                   <option value="2">2</option>
+                                   </select>                                    
+                               
+                                  
+
+                                  <div class="w3-center w3-margin-top">
+                                  <input type="submit" value="Save" class="w3-button w3-red w3-round">
+                                  </div>
+                                  <br>
+                                  
+                                  </form>
+                
+                              </div> 
+
+                
+                
+                      </div>   
+
+</div>
+
+
+
+
+
+
+</body>
+</html>
